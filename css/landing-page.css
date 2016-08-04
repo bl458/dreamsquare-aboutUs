@@ -175,4 +175,16 @@ p.copyright {
     margin: 15px 0 0;
 }
 
-#divLink {color: black;}
+/* Problems */
+#problems-caption {
+  clear:both;
+  border: 1px solid black;
+  width: 400px; padding: 6px;
+  display:none;
+}
+
+#problems-caption-header {
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 12px;
+}

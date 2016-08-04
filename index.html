@@ -9,7 +9,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>DreamSquare - Talent Connect Platform</title>
+    <title>TalentX - Talent Connect Platform</title>
+
+    <!-- Javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script src="js/jquery.imagemapster.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -48,7 +53,7 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <!-- <ul class="nav navbar-nav navbar-right">
                   <li>
                       <a href="talentx.html">Talentx</a>
                   </li>
@@ -74,7 +79,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <h1>DreamSquare</h1>
+                        <h1>TalentX</h1>
                         <h3>Unleash your career potential through technology!</h3>
                         <hr class="intro-divider">
                     </div>
@@ -90,41 +95,55 @@
     <!-- Page Content -->
 
 	<a name="services"></a>
-    <div class="content-section-a">
-    <a id="divLink" href="talentx.html"><span></span>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">TalentX</h2>
-                    <p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut "</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/ipad.png" alt="">
-                </div>
-            </div>
+  <div class="content-section-a">
 
-        </div>
-        <!-- /.container -->
+      <div class="container">
 
-    </div>
-    <!-- /.content-section-a -->
-    </a>
+          <div class="row">
+              <div class="col-lg-5 col-sm-6">
+                  <hr class="section-heading-spacer">
+                  <div class="clearfix"></div>
+                  <h2 class="section-heading">Hundred Problems <br> One Solution</h2>
+                  <p class="lead">Regardless of where you stand, Talentx will guide you to discover where your true talent lies and arrive at the career that truly makes you happy. </p>
+              </div>
+              <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <img class='img-responsive' id="Problems" src="img/stages.jpg" usemap="#problems-map">
+                  <map name="problems-map">
+                    <area shape="rect" data-name="stage1,all" coords="394,159,424,305" href="#" />
+                    <area shape="rect" data-name="stage2,all" coords="326,145,363,272" href="#" />
+                    <area shape="rect" data-name="stage3,all" coords="268,109,304,250" href="#" />
+                    <area shape="rect" data-name="stage4,all" coords="204,83,239,221" href="#" />
+                  </map>
+
+                  <div id="problems-caption">
+                       <div id="problems-caption-header"></div>
+                       <div id="problems-caption-text"></div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+      <!-- /.container -->
+
+  </div>
+  <!-- /.content-section-a -->
 
     <div class="content-section-b">
 
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6" >
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">3D Device Mockups<br>by PSDCovers</h2>
-                    <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
+                    <h2 class="section-heading">Tell us who you are<br>Discover what makes you special</h2>
+                    <p class="lead">Tell us your preferences, skillsets, values and work style by answering a quick series of questions, and we’ll do the work for you. Our analysis will be used to find the perfect job and open you up to opportunities you didn’t even know existed.</p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/dog.png" alt="">
+                  <figure>
+                    <img class='img-responsive' src="img/dog.png" alt="">
+                    <figcaption>The questions are different from your average personality test questions: we ask them in ways that will allow you to assess and evaluate yourself from an objective point of view, minimizing bias. </figcaption>
+                  </figure>
                 </div>
             </div>
 
@@ -156,6 +175,9 @@
     </div>
     <!-- /.content-section-a -->
 
+
+
+
 	<a  name="contact"></a>
     <div class="banner">
 
@@ -186,39 +208,11 @@
     </div>
     <!-- /.banner -->
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#services">Services</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Javascript -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/problems.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+
 
 </body>
 
