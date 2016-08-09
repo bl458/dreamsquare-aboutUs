@@ -1,5 +1,5 @@
 var nrImg = 5;  //the number of img
-var IntSeconds = 4;     //the seconds between the imgs
+var IntSeconds = 15;     //the seconds between the imgs
 
 $(document).ready (
 function Load()
