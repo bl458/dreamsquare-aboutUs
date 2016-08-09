@@ -105,9 +105,9 @@ h6 {
     border-bottom: 1px solid #e7e7e7;
 }
 
-.content-section-c{
+.content-section-a {
     padding: 50px 0;
-    background-color: #eef2ff
+    background-color: #eaf2f8
 }
 
 .section-heading {
@@ -180,6 +180,7 @@ p.copyright {
     margin: 15px 0 0;
 }
 
+
 /* Problems */
 #problems-caption {
   clear:both;
@@ -192,4 +193,110 @@ p.copyright {
   font-style: italic;
   font-weight: bold;
   margin-bottom: 12px;
+}
+
+
+/*Slideshow*/
+#slider {
+  height: 70vh;
+}
+#imgs img
+{
+    /*overlays all the imgs */
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    transition: 1s;
+    visibility:hidden;
+}
+
+#Snav
+{
+    display:block;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+#SnavTop
+{
+    display:block;
+    background-color:rgba(0, 0, 0, 0.8);
+    width:100%;
+    height:9%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+#SnavTop p
+{
+    font:normal 200% Arial;
+    color:#fff;
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin-left:3%;
+    visibility:hidden;
+}
+
+#SnavMiddle
+{
+    display:block;
+    width:100%;
+    height:15%;
+    margin-top:23%;
+}
+/*left button*/
+#Sleft
+{
+    width:8%;
+    height:100%;
+    float:left;
+    margin-left:3%;
+    opacity:0.3;
+}
+/*button effect*/
+#Sleft:hover
+{
+    opacity:0.8;
+}
+/*right button*/
+#Sright
+{
+    width:8%;
+    height:100%;
+    float:right;
+    margin-right:3%;
+    opacity:0.3;
+}
+/*button effect*/
+#Sright:hover
+{
+    opacity:0.8;
+}
+
+#SnavBottom
+{
+    display:block;
+    background-color:rgba(0, 0, 0, 0.8);
+    width:100%;
+    height:8%;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+#SnavBottom p
+{
+    font:normal 200% Arial;
+    color:#fff;
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin-left:3%;
+    visibility:hidden;
+    font-size:110%;
 }
