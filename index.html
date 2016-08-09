@@ -9,7 +9,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>TalentX</title>
+    <title>TalentX - Talent Connect Platform</title>
+
+    <!-- Javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script src="js/jquery.imagemapster.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -48,7 +53,7 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <!-- <ul class="nav navbar-nav navbar-right">
                   <li>
                       <a href="talentx.html">Talentx</a>
                   </li>
@@ -56,7 +61,7 @@
                       <a href="mentor.html">Mentoring</a>
                   </li>
                   <li>
-                      <a href="mentor.html">Recruiting</a>
+                      <a href="recruiting.html">Recruiting</a>
                   </li>
                 </ul>
             </div>
@@ -75,6 +80,7 @@
                 <div class="col-lg-12">
                     <div class="intro-message">
                         <h1>TalentX</h1>
+                        <h3>Unleash your career potential through technology!</h3>
                         <hr class="intro-divider">
                     </div>
                 </div>
@@ -89,18 +95,55 @@
     <!-- Page Content -->
 
 	<a name="services"></a>
-    <div class="content-section-a">
+  <div class="content-section-a">
+
+      <div class="container">
+
+          <div class="row">
+              <div class="col-lg-5 col-sm-6">
+                  <hr class="section-heading-spacer">
+                  <div class="clearfix"></div>
+                  <h2 class="section-heading">Hundred Problems <br> One Solution</h2>
+                  <p class="lead">Regardless of where you stand, Talentx will guide you to discover where your true talent lies and arrive at the career that truly makes you happy. </p>
+              </div>
+              <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <img class='img-responsive' id="Problems" src="img/stages.jpg" usemap="#problems-map">
+                  <map name="problems-map">
+                    <area shape="rect" data-name="stage1,all" coords="394,159,424,305" href="#" />
+                    <area shape="rect" data-name="stage2,all" coords="326,145,363,272" href="#" />
+                    <area shape="rect" data-name="stage3,all" coords="268,109,304,250" href="#" />
+                    <area shape="rect" data-name="stage4,all" coords="204,83,239,221" href="#" />
+                  </map>
+
+                  <div id="problems-caption">
+                       <div id="problems-caption-header"></div>
+                       <div id="problems-caption-text"></div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+      <!-- /.container -->
+
+  </div>
+  <!-- /.content-section-a -->
+
+    <div class="content-section-b">
 
         <div class="container">
+
             <div class="row">
-                <div class="col-lg-5 col-sm-6">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6" >
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">What are you about?</h2>
-                    <p class="lead">Talk about questionnaire!</p>
+                    <h2 class="section-heading">Tell us who you are<br>Discover what makes you special</h2>
+                    <p class="lead">Tell us your preferences, skillsets, values and work style by answering a quick series of questions, and we’ll do the work for you. Our analysis will be used to find the perfect job and open you up to opportunities you didn’t even know existed.</p>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/ipad.png" alt="">
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                  <figure>
+                    <img class='img-responsive' src="img/questionnaire.png" alt="">
+                    <figcaption>The questions are different from your average personality test questions: we ask them in ways that will allow you to assess and evaluate yourself from an objective point of view, minimizing bias. </figcaption>
+                  </figure>
                 </div>
             </div>
 
@@ -108,9 +151,9 @@
         <!-- /.container -->
 
     </div>
-    <!-- /.content-section-a -->
+    <!-- /.content-section-b -->
 
-    <div class="content-section-b">
+    <div class="content-section-c">
     <!-- the 300M info part, separated into three columns-->
         <div class="container">
 
@@ -118,26 +161,31 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading"> Over 300 Million confirmed profiles! </h2> 
+                    <h2 class="section-heading"> How do we make the best suggestions for you? </h2>
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-4">
-                                <h3>Uses verified career profiles of 300M professionals</h3>
-                                <p class="lead">Stores public data containing 
+                                <!-- minorissue with using the img-responsive. 
+                                    we need to have same sized images to put in there later-->
+                                <img src="img/dog.jpg" class="img-responsive img-circle">
+                                <h3>Verified profiles of 300M professionals</h3>
+                                <p class="lead">Stores public data containing
                                 career profiles of 300M professionals from all
-                                 over the globe (second largest in the world)</p>
+                                 over the globe (second largest in the world!)</p>
                             </div>
                             <div class="col-sm-4">
-                                <h3>Career patterns machine-learned by AI Heuri</h3>
-                                    <p>Machine-learns career patterns including
-                                     jobs and companies of 300M professionals who 
+                                <img src="img/dog.jpg" class="img-responsive img-circle">
+                                <h3>AI Heuri</h3>
+                                    <p class="lead">Machine-learned career patterns include
+                                     jobs and companies of 300M professionals who
                                      are successfully building their careers</p>
                             </div>
                             <div class="col-sm-4">
-                                <h3>Matches careers based on the individual’s characteristics</h3>
-                                <p>Analyzes over 100 user-inputted data from 13 
-                                different categories and matches with professionals
-                                 who share similar patterns</p>
+                                <img src="img/dog.jpg" class="img-responsive img-circle">
+                                <h3>Tailored for you</h3>
+                                <p class="lead">We analyze over 100 points of your input data from 13
+                                different categories and matche you with professionals
+                                who share similar patterns</p>
                             </div>
                         </div>
                     </div>
@@ -150,68 +198,57 @@
    <!-- <div class="banner">
     </div> -->
 
-    <div class="content-section-a">
-        <!-- try to switch the slogan with the info-->
+    <div class="content-section-b">
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-5 col-sm-6">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Search based is outdated, 
+                    <h2 class="section-heading">Search based is outdated,
                     personalized recommendation is coming</h2>
                 </div>
             <div class="row">
-                <div class="col-lg-5 col-sm-6">
+                <div class="col-lg-5 col-sm-pull-6 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <p class="lead">Traditional career platforms provide...</p>
-                        <ul>
+                    <h3>Traditional career platforms provide...</h3>
+                        <ul class="lead">
                             <li>random job postings without considering user preference or aptitudes</li>
-                            <li>irrelevant job postings while we offer the job posting that fits you and interests you</li>
+                            <li>little to no consideration for the individual</li>
                         </ul>
-                
+                        </p>
                 </div>
             </div>
-
         </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-
-    <div class="content-section-a">
-    <!-- final part Keys part-->
-        <div class="container">
 
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Talentx has the solution</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
                     <p class="lead">Recommend the right <b>Company</b> for the user
-                    by analyzing both the cultural values of users and working 
-                    environments of different companies, our platform recommends 
+                    by analyzing both the cultural values of users and working
+                    environments of different companies, our platform recommends
                     the right company that the user can easily adapt to.</p>
                     <p class="lead">Recommend the right <b>Position</b> for the user
-                    by analyzing the skill set (Educational background) that user 
-                    has and required skills that the company is looking for, our 
-                    platform recommends the right position that the user can excel 
+                    by analyzing the skill set (Educational background) that user
+                    has and required skills that the company is looking for, our
+                    platform recommends the right position that the user can excel
                     in.</p>
                 </div>
-                <div class="col-lg-5 col-sm-6">
-                    <img src="img/dog.png" class="img-responsive" alt="placeholder">
+                 <div class="col-lg-5 col-sm-offset-2 col-sm-6">
+                    <img src="img/benefits-venn.png" class="img-responsive" alt="placeholder">
                 </div>
+            </div>
+
+
             </div>
         </div>
     </div>
+
+
+
 
 	<a  name="contact"></a>
     <div class="banner">
@@ -243,39 +280,11 @@
     </div>
     <!-- /.banner -->
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#services">Services</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Javascript -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/problems.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+
 
 </body>
 
