@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TalentX AboutUS Page">
+    <meta name="author" content="Byungchan, Hajin">
+
+    <title>TalentX - Talent Connect Platform</title>
+
+    <!-- Javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script src="js/jquery.imagemapster.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="index.html"></a>
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                  <li>
+                      <a href="talentx.html">Log in</a>
+                  </li>
+                  <li>
+                      <a href="mentor.html">Sign up</a>
+                  </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
+
+        <div class="col-lg-9">
+            <div class="intro-message">
+                <h1>TalentX</h1>
+                <h3>Unleash your career potential through technology!</h3>
+                <hr class="intro-divider">
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+
+	<a name="services"></a>
+  <div class="content-section-a">
+
+      <div class="container">
+
+          <div class="row">
+              <div class="col-lg-3">
+                  <hr class="section-heading-spacer">
+                  <div class="clearfix"></div>
+                  <h2 class="section-heading">Hundred Problems <br> One Solution</h2>
+                  <p class="lead">Regardless of where you stand, Talentx will guide you to discover where your true talent lies and arrive at the career that truly makes you happy. </p>
+              </div>
+              <div class="col-lg-6">
+                <img class='img-responsive' id="Problems" src="img/stages.jpg" usemap="#problems-map">
+                  <map name="problems-map">
+                    <area shape="rect" data-name="stage1,all" coords="394,159,424,305" href="#" />
+                    <area shape="rect" data-name="stage2,all" coords="326,145,363,272" href="#" />
+                    <area shape="rect" data-name="stage3,all" coords="268,109,304,250" href="#" />
+                    <area shape="rect" data-name="stage4,all" coords="204,83,239,221" href="#" />
+                  </map>
+
+                  <div id="problems-caption">
+                       <div id="problems-caption-header"></div>
+                       <div id="problems-caption-text"></div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+      <!-- /.container -->
+
+  </div>
+  <!-- /.content-section-a -->
+
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-10 col-sm-11">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Our Service</h2>
+                    <p class="lead"></p>
+                </div>
+                <div class="col-lg-10 col-sm-11">
+                  <div id="slider">
+                      <!-- Images-->
+                      <div id="imgs">
+                          <img id="Img5" src="IMG/step5.jpg"/>
+                          <img id="Img4" src="IMG/step4.jpg"/>
+                          <img id="Img3" src="IMG/step3.jpg"/>
+                          <img id="Img2" src="IMG/step2.jpg"/>
+                          <img id="Img1" src="IMG/step1.jpg"/>
+                      </div>
+
+                      <!-- Title, buttons, and caption-->
+                      <div id="Snav">
+                          <!-- Title -->
+                          <div id="SnavTop">
+                            <p id="STitle0">Sign-Up</p>
+                            <p id="STitle1">Assessment</p>
+                            <p id="STitle2">Career Matches</p>
+                            <p id="STitle3">Job Postings</p>
+                            <p id="STitle4">My Career Profile</p>
+                          </div>
+
+                          <!-- Left and right button -->
+                          <div id="SnavMiddle">
+                              <img id="Sleft" src="IMG/left.png" onclick="prev()"/>
+                              <img id="Sright" src="IMG/right.png" onclick="next()"/>
+                          </div>
+
+                          <!-- Captions -->
+                          <div id="SnavBottom">
+                              <p id="SCaption0">It’s easy! All you need is an email.</p>
+                              <p id="SCaption1">Tell us your preferences, skillsets, values and work style by answering a five minute questionnaire. Then we'll do the work for you!</p>
+                              <p id="SCaption2">Save careers that you like to your profile for more personalized recommendations!</p>
+                              <p id="SCaption3">Discover real-time job opportunities that considers both your credentials and work style. Apply right away!</p>
+                              <p id="SCaption4">As you grow and change, your profile grows with you. Editing your preferences is as simple as a click of a button!</p>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /.content-section-b -->
+
+    <div class="content-section-b">
+    <!-- the 300M info part, separated into three columns-->
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading"> Over 300 Million confirmed profiles! </h2>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h3>Uses verified career profiles of 300M professionals</h3>
+                                <p class="lead">Stores public data containing
+                                career profiles of 300M professionals from all
+                                 over the globe (second largest in the world)</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <h3>Career patterns machine-learned by AI Heuri</h3>
+                                    <p>Machine-learns career patterns including
+                                     jobs and companies of 300M professionals who
+                                     are successfully building their careers</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <h3>Matches careers based on the individual’s characteristics</h3>
+                                <p>Analyzes over 100 user-inputted data from 13
+                                different categories and matches with professionals
+                                 who share similar patterns</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.content-section-b -->
+   <!-- <div class="banner">
+    </div> -->
+
+    <div class="content-section-a">
+        <!-- try to switch the slogan with the info-->
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Search based is outdated,
+                    personalized recommendation is coming</h2>
+                </div>
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <p class="lead">Traditional career platforms provide...</p>
+                        <ul>
+                            <li>random job postings without considering user preference or aptitudes</li>
+                            <li>irrelevant job postings while we offer the job posting that fits you and interests you</li>
+                        </ul>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+
+    <div class="content-section-a">
+    <!-- final part Keys part-->
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Talentx has the solution</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <p class="lead">Recommend the right <b>Company</b> for the user
+                    by analyzing both the cultural values of users and working
+                    environments of different companies, our platform recommends
+                    the right company that the user can easily adapt to.</p>
+                    <p class="lead">Recommend the right <b>Position</b> for the user
+                    by analyzing the skill set (Educational background) that user
+                    has and required skills that the company is looking for, our
+                    platform recommends the right position that the user can excel
+                    in.</p>
+                </div>
+                <div class="col-lg-5 col-sm-6">
+                    <img src="img/dog.png" class="img-responsive" alt="placeholder">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+	<a  name="contact"></a>
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2></h2>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="js/problems.js"></script>
+    <script type="text/javascript" src="js/imageSlider.js"></script>
+
+</body>
+</html>
